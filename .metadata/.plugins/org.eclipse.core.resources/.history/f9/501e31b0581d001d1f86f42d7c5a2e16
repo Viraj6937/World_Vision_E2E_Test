@@ -1,0 +1,10 @@
+
+public class Donate_E2E_Test {
+	
+	
+	@BeforeTest
+	public void navigateUrl() {
+		
+	}
+
+}

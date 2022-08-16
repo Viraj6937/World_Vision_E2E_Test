@@ -1,0 +1,27 @@
+package PageObject;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class Choose_Child_Page_Object {
+
+	public WebDriver driver;
+	
+	private By children_list = By.cssSelector("div#page > div#page-inner > div#content > div#primary > main > article > div.container > div.entry-content > div > div > div.vc_column-inner > div.wpb_wrapper > div#sponsorship-wrapper > div > div > div > section > div > div");
+	
+	
+	public Choose_Child_Page_Object(WebDriver driver) {
+		// TODO Auto-generated constructor stub
+		this.driver=driver;
+	}
+
+
+	public List<WebElement> get_children_list(){
+		return driver.findElements(children_list);
+	}
+	
+	
+}

@@ -1,0 +1,21 @@
+import org.testng.annotations.BeforeTest;
+
+public class Donate_E2E_Test {
+	
+	
+	@BeforeTest
+	public void navigateUrl() {
+		
+	}
+	
+	@Test
+	public void get_amount_donate() {
+		
+	}
+	
+	@AfterTest
+	public void terminate() {
+		
+	}
+
+}

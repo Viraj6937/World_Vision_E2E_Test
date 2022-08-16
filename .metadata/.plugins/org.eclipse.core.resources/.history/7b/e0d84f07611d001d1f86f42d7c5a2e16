@@ -1,0 +1,5 @@
+package PageObject;
+
+public class Common_Page_Object {
+
+}

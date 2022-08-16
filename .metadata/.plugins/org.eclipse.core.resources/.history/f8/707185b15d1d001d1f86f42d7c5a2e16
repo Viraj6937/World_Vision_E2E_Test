@@ -1,0 +1,15 @@
+package PageObject;
+
+import org.openqa.selenium.By;
+
+public class Choose_Child_Page_Object {
+
+	private By children_list = By.cssSelector("div#page > div#page-inner > div#content > div#primary > main > article > div.container > div.entry-content > div > div > div.vc_column-inner > div.wpb_wrapper > div#sponsorship-wrapper > div > div > div > section > div > div");
+	
+	
+	public List<WebElement> get_children_list(){
+		return 
+	}
+	
+	
+}

@@ -1,0 +1,9 @@
+package PageObject;
+
+import org.openqa.selenium.By;
+
+public class Payment_Page_Object {
+
+	private By proceed_to_check_out = By.cssSelector("div#content > div#primary > main#main > article > div > div > div.woocommerce > div.container > div > div.wc-proceed-to-checkout > div > a.btn-checkout");
+	
+}

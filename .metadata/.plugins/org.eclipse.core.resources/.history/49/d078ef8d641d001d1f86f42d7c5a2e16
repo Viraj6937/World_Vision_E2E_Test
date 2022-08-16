@@ -1,0 +1,78 @@
+package PageObject;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class Payment_Page_Object {
+
+	public WebDriver driver;
+	
+	private By proceed_to_check_out = By.cssSelector("div#content > div#primary > main#main > article > div > div > div.woocommerce > div.container > div > div.wc-proceed-to-checkout > div > a.btn-checkout");
+	
+	private By pay_as_guest_submit = By.cssSelector("div#root > div > div > div.wvus-login > div > div.guest-panel > div > div > a#checkout-guest-continue");
+	
+	private By billing_first_name_field = By.cssSelector("div#content > div#primary > main > article > div > div.entry-content > div.woocommerce > form > div#root > div > div.checkout-step-0 > div > div > div > div > div.billing-fields > div > div > input#billing_first_name");
+	
+	private By billing_last_name_field = By.cssSelector("");
+	
+	private By billing_address1_field = By.cssSelector("");
+	
+	private By billing_address2_field = By.cssSelector("");
+	
+	private By billing_city_field = By.cssSelector("");
+	
+	private By billing_state_field = By.cssSelector("");
+	
+	private By billing_zip_field = By.cssSelector("");
+	
+	private By billing_email_field = By.cssSelector("");
+	
+	private By billing_phone_field = By.cssSelector("");
+	
+	private By billing_submit_button = By.cssSelector("");
+	
+	
+	
+	public WebElement get_proceed_to_check_out_submit() {
+		return driver.findElement(proceed_to_check_out);
+	}
+	
+	public WebElement get_payment_done_as_guest_submit() {
+		return driver.findElement(pay_as_guest_submit);
+	}
+	
+	public WebElement get_billing_first_name_field() {
+		return driver.findElement(billing_first_name_field);
+	}
+	
+	public WebElement get_billing_last_name_field() {
+		return driver.findElement(billing_last_name_field);
+	}
+	
+	public WebElement get_billing_address1_field() {
+		return driver.findElement(billing_address1_field);
+	}
+	
+	public WebElement get_billing_address2_field() {
+		return driver.findElement(billing_address2_field);
+	}
+	
+	public WebElement get_billing_city_field() {
+		return driver.findElement(billing_city_field);
+	}
+	
+	public WebElement get_billing_state_field() {
+		return driver.findElement(billing_state_field);
+	}
+	
+	public WebElement get_billing_zip_field() {
+		return driver.findElement(billing_zip_field);
+	}
+	
+	public WebElement get_billing_email_field() {
+		return driver.findElement(billing_email_field);
+	}
+	
+	
+}

@@ -1,0 +1,44 @@
+package TestFile;
+import java.io.IOException;
+
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+
+import PageObject.Landing_Page_Object;
+import Resources.Base;
+
+public class Donate_E2E_Test extends Base{
+	
+	Landing_Page_Object lpo;
+	
+	@BeforeTest
+	public void navigateUrl() throws IOException {
+		
+		driver = initializeDriver();
+		
+		driver.get(prop.getProperty("url"));
+		
+		driver.manage().window().maximize();
+	}
+	
+	@Test(dataProvider="details")
+	public void get_amount_donate(String gender, String age) {
+		
+	}
+	
+	@AfterTest
+	public void terminate() {
+		driver.quit();
+	}
+
+	@DataProvider(name="details")
+	public Object[][]getData(){
+		Object[][] data = new Object[1][2];
+		data[0][0] = "Boy";
+		data[0][1] = "7";
+		
+		return data;
+	}
+}
